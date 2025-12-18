@@ -1,0 +1,308 @@
+// Mobile Menu Toggle
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const navMenu = document.querySelector('.nav-menu');
+
+if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        const icon = mobileMenuBtn.querySelector('i');
+        if (navMenu.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+}
+
+// Close mobile menu when clicking a link
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        const icon = mobileMenuBtn.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+    });
+});
+
+// Notify Form Submission
+const notifyBtn = document.getElementById('notify-btn');
+const emailInput = document.getElementById('email-input');
+
+if (notifyBtn) {
+    notifyBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const email = emailInput.value.trim();
+        
+        if (!validateEmail(email)) {
+            showNotification('Please enter a valid email address', 'error');
+            return;
+        }
+        
+        // In a real application, this would send to a server
+        showNotification('You\'ll be notified at launch! Thank you.', 'success');
+        emailInput.value = '';
+        
+        // Analytics event (simulated)
+        console.log('Email captured for launch notification:', email);
+    });
+}
+
+// Contact Form Submission
+const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('contact-email').value.trim();
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value.trim();
+        
+        if (!name || !email || !subject || !message) {
+            showNotification('Please fill in all fields', 'error');
+            return;
+        }
+        
+        if (!validateEmail(email)) {
+            showNotification('Please enter a valid email address', 'error');
+            return;
+        }
+        
+        // In a real application, this would send to a server
+        showNotification('Message sent successfully! We\'ll get back to you soon.', 'success');
+        contactForm.reset();
+        
+        // Analytics event (simulated)
+        console.log('Contact form submitted:', { name, email, subject, message });
+    });
+}
+
+// Email validation
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+// Notification system
+function showNotification(message, type) {
+    // Remove existing notification
+    const existingNotification = document.querySelector('.notification');
+    if (existingNotification) {
+        existingNotification.remove();
+    }
+    
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = notification notification-${type};
+    notification.textContent = message;
+    notification.style.cssText = `
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        padding: 16px 24px;
+        border-radius: 8px;
+        color: white;
+        font-weight: 600;
+        z-index: 9999;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        animation: slideIn 0.3s ease;
+    `;
+    
+    // Set background color based on type
+    if (type === 'success') {
+        notification.style.backgroundColor = '#34a853';
+    } else if (type === 'error') {
+        notification.style.backgroundColor = '#ea4335';
+    } else {
+        notification.style.backgroundColor = '#1a73e8';
+    }
+    
+    // Add to page
+    document.body.appendChild(notification);
+    
+    // Remove after 5 seconds
+    setTimeout(() => {
+        notification.style.animation = 'slideOut 0.3s ease';
+        setTimeout(() => {
+            if (notification.parentNode) {
+                notification.parentNode.removeChild(notification);
+            }
+        }, 300);
+    }, 5000);
+}
+
+// Add CSS for notification animations
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slideOut {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        to {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+    }
+`;
+document.head.appendChild(style);
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            const headerOffset = 80;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Add active class to nav links on scroll
+const sections = document.querySelectorAll('section[id]');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - 100)) {
+            current = section.getAttribute('id');
+        }
+    });
+    
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === #${current}) {
+            link.classList.add('active');
+        }
+    });
+});
+
+// Initialize active state on page load
+document.addEventListener('DOMContentLoaded', () => {
+    // Trigger scroll event to set initial active state
+    window.dispatchEvent(new Event('scroll'));
+    
+    // Add active style to active nav links
+    const style = document.createElement('style');
+    style.textContent = `
+        .nav-link.active {
+            color: #1a73e8 !important;
+            font-weight: 600;
+        }
+    `;
+    document.head.appendChild(style);
+});
+
+// Form input enhancements
+document.querySelectorAll('input, textarea, select').forEach(input => {
+    // Add focus effect
+    input.addEventListener('focus', function() {
+        this.parentElement.classList.add('focused');
+    });
+    
+    input.addEventListener('blur', function() {
+        if (!this.value) {
+            this.parentElement.classList.remove('focused');
+        }
+    });
+    
+    // Add floating label effect for contact form
+    if (input.parentElement.classList.contains('form-group')) {
+        const label = document.createElement('label');
+        label.textContent = input.placeholder;
+        label.style.cssText = `
+            position: absolute;
+            top: -10px;
+            left: 12px;
+            font-size: 12px;
+            color: #1a73e8;
+            background: white;
+            padding: 0 4px;
+            display: none;
+        `;
+        
+        input.placeholder = '';
+        input.parentElement.style.position = 'relative';
+        input.parentElement.appendChild(label);
+        
+        input.addEventListener('focus', function() {
+            label.style.display = 'block';
+        });
+        
+        input.addEventListener('blur', function() {
+            if (!this.value) {
+                label.style.display = 'none';
+            }
+        });
+    }
+});
+
+// Add stats counter animation
+function animateStats() {
+    const statNumbers = document.querySelectorAll('.stat-number');
+    
+    statNumbers.forEach(stat => {
+        const target = parseInt(stat.textContent.replace(/[^0-9]/g, ''));
+        const duration = 2000;
+        const step = target / (duration / 16);
+        let current = 0;
+        
+        const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+            }
+            
+            if (stat.classList.contains('stat-percent')) {
+                stat.textContent = Math.floor(current) + '%';
+            } else {
+                stat.textContent = Math.floor(current);
+            }
+        }, 16);
+    });
+}
+
+// Trigger stats animation when section is in view
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateStats();
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+// Observe problem section for stats animation
+const problemSection = document.querySelector('.problem');
+if (problemSection) {
+    observer.observe(problemSection);
+}
