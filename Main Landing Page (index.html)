@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShieldSleeve | Men's Intimate Hygiene, Simplified</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <div class="logo-circle">SS</div>
+                    <span class="logo-text">Shield<span class="logo-highlight">Sleeve</span></span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <a href="#problem" class="nav-link">The Problem</a>
+                <a href="#solution" class="nav-link">The Solution</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#specs" class="nav-link">Specifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#notify" class="nav-btn">Notify at Launch</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Coming 2026</div>
+                <h1 class="hero-title">Intimate Hygiene, <span class="highlight">Simplified.</span></h1>
+                <p class="hero-subtitle">A discreet, single-use sleeve with pH-balanced lotion. No water needed. 30-second refresh.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">89<span class="stat-currency">₹</span></div>
+                        <div class="stat-label">Per Unit</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">30<span class="stat-unit">sec</span></div>
+                        <div class="stat-label">Refresh Time</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5.0<span class="stat-unit">pH</span></div>
+                        <div class="stat-label">Balanced</div>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#notify" class="btn-primary">Notify Me at Launch</a>
+                    <a href="#solution" class="btn-secondary">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="product-display">
+                    <div class="product-pack">
+                        <div class="pack-front">
+                            <div class="pack-brand">ShieldSleeve</div>
+                            <div class="pack-tagline">Intimate Refresh</div>
+                            <div class="pack-count">Single Use</div>
+                        </div>
+                    </div>
+                    <div class="product-sleeve">
+                        <div class="sleeve-tip"></div>
+                        <div class="sleeve-body"></div>
+                        <div class="sleeve-opening"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="section problem">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Unspoken Problem</h2>
+                <p class="section-subtitle">Men's intimate hygiene has been ignored for too long</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-train"></i>
+                    </div>
+                    <h3 class="problem-title">During Travel</h3>
+                    <p class="problem-desc">Long journeys without access to proper washing facilities lead to discomfort and odor.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="problem-title">At Work</h3>
+                    <p class="problem-desc">12+ hour workdays in professional settings with no privacy for proper hygiene.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="problem-title">After Gym</h3>
+                    <p class="problem-desc">Sweat and bacteria buildup after workouts, but communal showers aren't private.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3 class="problem-title">Current Solutions Fail</h3>
+                    <p class="problem-desc">Wet wipes cause irritation, water isn't available, and most men suffer in silence.</p>
+                </div>
+            </div>
+            <div class="problem-stats">
+                <div class="stat-item">
+                    <div class="stat-number">68<span class="stat-percent">%</span></div>
+                    <div class="stat-text">of Indian men experience intimate discomfort during travel</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">0</div>
+                    <div class="stat-text">products designed specifically for male anatomy & on-the-go use</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="section solution">
+        <div class="container">
+            <div class="solution-content">
+                <div class="section-header">
+                    <h2 class="section-title">Simple, Effective Solution</h2>
+                    <p class="section-subtitle">Engineered for real-world use</p>
+                </div>
+                <div class="solution-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Waterless Design</h4>
+                            <p>Pre-applied pH 5.0 lotion means no water needed. Use anywhere, anytime.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-ruler-combined"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>55mm Easy-Entry Opening</h4>
+                            <p>Wider than standard condoms for effortless application in any state.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Natural Formulation</h4>
+                            <p>Aloe Vera + Citricidal (Grapefruit Seed Extract) - effective yet gentle.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Discreet & Portable</h4>
+                            <p>Single foil pouch (condom-pack size) fits in wallet or pocket.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="solution-visual">
+                <div class="usage-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <i class="fas fa-box-open"></i>
+                        </div>
+                        <div class="step-title">Open</div>
+                        <div class="step-desc">Tear open foil pouch</div>
+                    </div>
+                    <div class="step-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <i class="fas fa-hand-paper"></i>
+                        </div>
+                        <div class="step-title">Apply</div>
+                        <div class="step-desc">Slip on easily (15 seconds)</div>
+                    </div>
+                    <div class="step-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <div class="step-title">Refresh</div>
+                        <div class="step-desc">Gentle motion (15 seconds)</div>
+                    </div>
+                    <div class="step-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">
+                            <i class="fas fa-trash"></i>
+                        </div>
+                        <div class="step-title">Discard</div>
+                        <div class="step-desc">Dispose responsibly</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Engineering Behind the Simplicity</h2>
+                <p class="section-subtitle">Why ShieldSleeve works when others would fail</p>
+            </div>
+            <div class="works-grid">
+                <div class="works-card">
+                    <div class="works-card-header">
+                        <div class="works-card-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3 class="works-card-title">Existing Manufacturing</h3>
+                    </div>
+                    <p>Uses standard condom production lines at HLL Lifecare (world's largest condom factory). No custom machinery needed.</p>
+                </div>
+                <div class="works-card">
+                    <div class="works-card-header">
+                        <div class="works-card-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3 class="works-card-title">Cosmetic Classification</h3>
+                    </div>
+                    <p>Not a medical device. CDSCO cosmetic approval takes 6-9 months (not 3+ years for drugs).</p>
+                </div>
+                <div class="works-card">
+                    <div class="works-card-header">
+                        <div class="works-card-icon">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <h3 class="works-card-title">Razor-Thin COGS</h3>
+                    </div>
+                    <p>₹9.50 cost per unit. 81% gross margin at ₹89 MRP. Economics work at scale.</p>
+                </div>
+                <div class="works-card">
+                    <div class="works-card-header">
+                        <div class="works-card-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3 class="works-card-title">Pharmacy Placement</h3>
+                    </div>
+                    <p>Sits next to condoms in pharmacies. Men already buy there - no new behavior needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="specs" class="section specs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Specifications</h2>
+                <p class="section-subtitle">Designed for reality, not just theory</p>
+            </div>
+            <div class="specs-container">
+                <div class="specs-visual">
+                    <div class="specs-diagram">
+                        <div class="diagram-title">55mm Easy-Entry Opening</div>
+                        <div class="diagram-opening">
+                            <div class="opening-circle">55mm</div>
+                        </div>
+                        <div class="diagram-taper"></div>
+                        <div class="diagram-tip">
+                            <div class="tip-label">120mm Length</div>
+                        </div>
+                        <div class="diagram-legend">
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #4a90e2;"></div>
+                                <div class="legend-text">Medical-grade Polyurethane</div>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #7ed321;"></div>
+                                <div class="legend-text">pH 5.0 Lotion Coating</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specs-details">
+                    <div class="specs-table">
+                        <div class="spec-row">
+                            <div class="spec-label">Material</div>
+                            <div class="spec-value">Medical-grade Polyurethane (Latex-free)</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-label">Opening Diameter</div>
+                            <div class="spec-value">55mm (57% wider than standard condoms)</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-label">Length</div>
+                            <div class="spec-value">120mm</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-label">Lotion Volume</div>
+                            <div class="spec-value">0.5ml ±0.05ml precision coating</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-label">pH Level</div>
+                            <div class="spec-value">5.0 (Matches healthy skin pH)</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-label">Active Ingredients</div>
+                            <div class="spec-value">Aloe Vera (70%), Glycerin (15%), Citricidal (10%), Preservative (5%)</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-label">Packaging</div>
+                            <div class="spec-value">Single foil pouch, 70mm × 40mm</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-label">Shelf Life</div>
+                            <div class="spec-value">36 months</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-label">Manufacturing Partner</div>
+                            <div class="spec-value">HLL Lifecare (Hindustan Latex)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notify Section -->
+    <section id="notify" class="section notify">
+        <div class="container">
+            <div class="notify-card">
+                <div class="notify-content">
+                    <h2 class="notify-title">Launching 2026</h2>
+                    <p class="notify-subtitle">Be among the first to know when ShieldSleeve is available. No spam, just one email at launch.</p>
+                    <div class="notify-form">
+                        <input type="email" id="email-input" placeholder="Enter your email address" class="email-input">
+                        <button id="notify-btn" class="notify-btn">Notify Me <i class="fas fa-bell"></i></button>
+                    </div>
+                    <p class="notify-note">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+                <div class="notify-visual">
+                    <div class="notify-badge">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">For business inquiries, partnerships, or media</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">contact@shieldsleeve.com</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Location</div>
+                            <div class="contact-value">Hyderabad, India</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Manufacturing Partner</div>
+                            <div class="contact-value">HLL Lifecare Ltd.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact-email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="partnership">Business Partnership</option>
+                                <option value="investment">Investment Inquiry</option>
+                                <option value="distribution">Distribution Inquiry</option>
+                                <option value="media">Media Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-circle">SS</div>
+                        <span class="logo-text">Shield<span class="logo-highlight">Sleeve</span></span>
+                    </div>
+                    <p class="footer-tagline">Men's intimate hygiene, simplified.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Product</h4>
+                        <a href="#problem" class="footer-link">The Problem</a>
+                        <a href="#solution" class="footer-link">The Solution</a>
+                        <a href="#specs" class="footer-link">Specifications</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Company</h4>
+                        <a href="#contact" class="footer-link">Contact</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Connect</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 ShieldSleeve. All rights reserved. Launching 2026.</p>
+                <p class="disclaimer">ShieldSleeve is a cosmetic intimate hygiene product. Not a medical device or contraceptive.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
